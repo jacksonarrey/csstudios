@@ -2,31 +2,28 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    overflow-x: hidden;
+   
 }
 
-.hero{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: rgb(247, 243, 243);
 
-}
+
 .logo{
     display:flex;
     width: 20px;
     height: 20px;
     margin:0px 1px;
-    padding: 1px;
+    padding: 3cqmax;
 }
 
 .nav{
     display:flex;
-    width: 84;
+    width: 100;
     margin: auto;
     padding: 20px 0;
     align-items: center;
     justify-content: space-between;
-    background: #09e46b;
+    background: #03130b;
 }
 
 .nav ul li{
@@ -37,7 +34,7 @@
 }
 
 .nav ul li a{
-    color: black;
+    color: rgb(247, 246, 246);
     font-weight: bold;
     font-size: 18;
     text-transform: uppercase;
@@ -45,8 +42,8 @@
     padding: 7px 10 px;
     border-radius: 3px;
 }
-a.active,a:hover{
-    border: 1px solid white;
+.nav ul li a:hover{
+    border: 1px solid rgb(24, 254, 8);
     transition: .5s;
 }
 .nav #icon{
@@ -72,17 +69,17 @@ a.active,a:hover{
     }
     
 }
-@media (max-width: 909px){
+@media (max-width: 900px){
     .nav #icon{
         display: block;
 
     }
     .nav ul {
         position: fixed;
-        width: 100%;
-        height: 100vh;
+        width:45%;
+        height: 70vh;
         background: #2f3640;
-        top: 90px;
+        top: 35px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -91,13 +88,15 @@ a.active,a:hover{
     
     .nav ul li{
         display: block;
-        margin: 60px;
+        margin: 25px;
         line-height: 70px;
     }
     .nav ul li a{
         font-size: 20px;
         color: beige;
     }
+    
+    
     a.active,a:hover{
         border: none;
         color: #3498db;
@@ -106,12 +105,15 @@ a.active,a:hover{
         left: 0;
 
     }
-
-   
-
-
     
+
 }
+
+
+
+
+
+
 
    
 .nav ul li a:hover{
@@ -224,18 +226,74 @@ span{
     padding: 20px 45px 20px 20px;
 
 }
-section{
-    background: url(bg1.jpg) no-repeat;
+.cover{
+    background: url('images/new images/pexels-bruno-massao-2228831.jpg') no-repeat;
     background-size: cover;
     height: calc(100vh - 70px);
+    margin-top: 2px;
+
+    
+    
 }
+
+
+.video-control .video .min-video{
+    width: 25rem;
+    height:15rem;
+    margin: 2rem;
+    box-shadow: 0.2rem .3rem rgba(0,0,0,.2);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.video-control .video .min-video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+}
+.video-control .video{
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+.main-titles h4{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    font-size: 30px;
+    
+
+}
+.main-title h4{
+    display: flex;
+    justify-content:center;
+    padding-top: 5%;
+    transform: scale(3);
+    
+
+    
+    
+
+}
+.phone_title{
+    display: none;
+}
+.main-title h4{
+    font-size: larger;
+}
+
+
 nav #icon:hover{
     color: red;
 
 }
 footer{
     width: 100%;
-    height: 100%;
+    height: 60%;
     background: linear-gradient(to right,#7d17dd, #212121);
     color: #fff;
     padding: 100px 0 70px;
@@ -342,7 +400,10 @@ form input{
     }
     .col{
         flex-basis: 100%;
+        display: block;
+
 }
+
 
 }
 .sub-menu-1{
@@ -350,4 +411,142 @@ form input{
 }
 .nav ul li:hover.sub-menu-1{
     display: block;
+}
+.vision p{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.vision span{
+    color: #080808;
+    margin-left: 1px;
+    margin-left: 2px;
+}
+.vision h4{
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: white;
+    border: 1PX solid transparent;
+
+    border-radius: 3px;
+    
+    
+}
+.vision{
+    padding: 30px;
+    background: rgb(230, 78, 78);
+    width:100%;
+    margin: 5PX;
+}
+.video-control{
+    background-color: #7d8085;
+    margin-top: 10PX;
+}
+@media screen and (max-width: 574px){
+    .vision{
+        padding: 30px;
+        background: rgb(230, 78, 78);
+        width: 50vh;
+        margin: 5PX;
+        margin-left: 10%;
+    
+    }
+    .vision p{
+        font-size: small;
+        display: inline;
+    }
+
+    .vision_control{
+        display: block;
+        justify-content: center;
+    }
+    .video-control .video{
+        display:block;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: space-between;
+    
+    }
+    footer{
+        width: 100%;
+        height: 60%;
+        background: linear-gradient(to right,#06010a, #212121);
+        color: #fff;
+        padding: 100px 0 70px;
+        display:block;
+        width: 84;
+        margin-top: 3%;
+    
+    
+    
+    }
+    .row{
+        width: 85%;
+        margin: auto;
+        display: block;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .cover{
+        background: url('images/new images/pexels-bruno-massao-2228831.jpg') no-repeat;
+        background-size: cover;
+        height:40vh;
+        margin-top: 2px;
+
+    
+        
+        
+    }
+    .main-title h4{
+        display: none;
+        justify-content:center;
+        padding-top: 30%;
+        transform: scale(1);
+        color: #e61a1a;
+    
+        
+    
+        
+        
+    
+    }
+    .phone_title{
+        display: flex;
+        justify-content: center;
+        padding-top: 20%;
+        font-size: 40px;
+        color: #fff;
+        
+    
+    }
+    .phone_title2{
+        display: flex;
+        justify-content: center;
+        padding-top: 3%;
+        font-size: 40px;
+        color: rgb(241, 118, 10);
+        
+    }
+    .subscribe a{
+        background-color: #e61a1a;
+        color: #fff;
+        box-shadow: 0.2rem .1rem rgba(0,0,0,.4);
+        overflow: hidden;
+         border-radius: 1rem;
+        text-decoration: none;
+    
+    }
+    .subscribe{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+
+
+
+
+
 }
