@@ -46,6 +46,10 @@
     border: 1px solid rgb(24, 254, 8);
     transition: .5s;
 }
+.sub ul li a{
+    display: flex;
+    color: #e61a1a;
+}
 .nav #icon{
     color:white;
     font-size: 3opx;
@@ -259,6 +263,12 @@ span{
     align-content: space-between;
 
 }
+.youtube{
+
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
 
 .main-titles h4{
     display: flex;
@@ -268,16 +278,36 @@ span{
     
 
 }
-.main-title h4{
+.cover .main-title h4{
     display: flex;
     justify-content:center;
-    padding-top: 5%;
-    transform: scale(3);
+    font-stretch: expanded;
+    text-transform: capitalize;
+    margin-top: 20%;
+    font-size: 90px;
+    text-decoration-line: underline;
+
     
 
     
     
 
+    
+    
+
+}
+.subscribe h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.subscribe h1 a{
+    margin-left: 10px;
+    color: #fff;
+    background-color: #e61a1a;
+    position: relative;
+    box-shadow: rgba(0,0,0,.4);
+    border-radius: 3px;
 }
 .phone_title{
     display: none;
@@ -440,9 +470,58 @@ form input{
     margin: 5PX;
 }
 .video-control{
-    background-color: #7d8085;
+    background-color: #e1e3e6;
     margin-top: 10PX;
 }
+#green{
+    background-color: #ccc;
+}
+.phone_title2{
+    display: none;
+}
+.subscribe{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.main h4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 40px;
+}
+.main h3{
+    display: flex;
+    justify-content: center;
+}
+.first_p P1{
+    display: flex;
+    justify-content: center;
+}
+.image_video_holder video{
+    width: 25rem;
+    height:15rem;
+    margin: 2rem;
+    
+    overflow: hidden;
+    border-radius: 1rem;
+
+}
+.image_video_holder img{
+    width: 25rem;
+    height:15rem;
+    margin: 2rem;
+
+    overflow: hidden;
+    border-radius: 1rem;
+
+}
+.image_video_holder{
+    display: flex;
+    justify-content: center;
+}
+
+
 @media screen and (max-width: 574px){
     .vision{
         padding: 30px;
@@ -494,6 +573,7 @@ form input{
         background-size: cover;
         height:40vh;
         margin-top: 2px;
+        overflow: hidden;
 
     
         
@@ -515,7 +595,7 @@ form input{
     .phone_title{
         display: flex;
         justify-content: center;
-        padding-top: 20%;
+        padding-top: 5%;
         font-size: 40px;
         color: #fff;
         
@@ -524,7 +604,7 @@ form input{
     .phone_title2{
         display: flex;
         justify-content: center;
-        padding-top: 3%;
+        padding-top: 1%;
         font-size: 40px;
         color: rgb(241, 118, 10);
         
@@ -543,7 +623,47 @@ form input{
         justify-content: center;
         margin-top: 10px;
     }
-    
+    .cover .subscribe a{
+        display: flex;
+        justify-content: center;
+    }
+    .cover .main-title h4{
+        display: none;
+    }
+    .subscribe h1{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20%;
+        color: #f40a0a;
+        
+
+        
+    }
+    .subscribe h1 a{
+        margin-left: 10px;
+        color: #fff;
+        background-color: #e61a1a;
+        position: relative;
+        box-shadow: rgba(0,0,0,.4);
+        border-radius: 3px;
+    }
+    .youtube{
+
+        display: block;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .youtube iframe{
+    width: 25rem;
+    height:15rem;
+    margin: 1.5rem;
+
+    }
+    .image_video_holder{
+        display: block;
+        justify-content: center;
+    }
+   
 
 
 
